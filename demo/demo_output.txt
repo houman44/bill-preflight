@@ -1,0 +1,139 @@
+==================================================================================
+ 1. Check 12 AI-drafted bills against POs, receipts and ERP mappings
+==================================================================================
+$ billcheck check --bills demo/bills.json --pos demo/pos.json --receipts demo/receipts.json --vendors demo/vendors.json --config demo/rules.json --out demo/report.json --html demo/report.html
+
+Bill Pre-flight | billcheck 0.1.0 | rules 1.0.0 | as of 2026-10-31
+Inputs:
+  bills.json       sha256 49edd6c5cb7b80695c9b04381c4aea95b64a7e24a7aa9a11da8d5429f3fc7329
+  pos.json         sha256 b5c973b4f4a98a3a1e5c34a1e54d3d8421f9247795781745b8ec9a49282ae2d0
+  receipts.json    sha256 ece3651e60d9b72452f15caefbf8704528a40c903e365e18be3b673efc383645
+  rules.json       sha256 e2673714861eff0004147eec628079fac798689e16971c8189e5b570d583e17e
+  vendors.json     sha256 c8c94fcc45a40857f6451ec070c32ee1c079790198d08d68d8b6081efc0cf733
+
+BILL  VENDOR                          INVOICE        PO           TOTAL CUR  VERDICT
+------------------------------------------------------------------------------------
+7004  Quarry Lane Facilities Services QL-5521        4104      1,982.00 CAD  BLOCK
+      R2 FAIL TOTAL_MISMATCH: subtotal 1840.00 + tax 92.00 + other costs 0.00 = 1932.00, invoice
+          total says 1982.00
+7005  Bluewren IT Hardware Inc.       BW-INV-77812   4105     20,596.80 CAD  BLOCK
+      R7 FAIL BILLED_OVER_RECEIVED: Laptop 14in, 32GB: billing 10 but only 8 received (PO 4105 line
+          1)
+7006  Tidewater Packaging Ltd.        TP-10093       4106      1,435.10 CAD  BLOCK
+      R3 FAIL TAX_CODE_UNMAPPED: line 70009: tax 'HST (ON) 13%' (id 7) has no ERP tax code mapping
+7010  Larkspur Office Supply Co.      Inv 417        4109        252.00 CAD  BLOCK
+      R1 FAIL DUPLICATE_INVOICE_NUMBER: invoice 'Inv 417' matches bill 7001 invoice 'INV-00417'
+          (normalised '417')
+7007  Fernhill Lab Instruments Ltd.   FLI-2026-0912  4107        881.66 CAD  REVIEW
+      R7 WARN PRICE_VARIANCE_WARN: Centrifuge tubes 50mL, case of 500: unit price 65.60 vs PO 64.00
+          (+2.50%)
+7012  Tidewater Packaging Ltd.        TP-10107       4111      1,333.50 CAD  REVIEW
+      R1 WARN POSSIBLE_DUPLICATE_AMOUNT_DATE: same vendor and total 1333.50 as bill 7011
+          ('TP-10101'), 4 day(s) apart
+7001  Larkspur Office Supply Co.      INV-00417      4101      1,579.20 CAD  PASS
+7002  Larkspur Office Supply Co.      INV-00431      4102      1,775.40 CAD  PASS
+7003  Fernhill Lab Instruments Ltd.   FLI-2026-0881  4103      1,534.40 CAD  PASS
+7008  Larkspur Office Supply Co.      INV-00452      4108        289.80 CAD  PASS
+7009  Quarry Lane Facilities Services QL-5530        4110        651.00 CAD  PASS
+7011  Tidewater Packaging Ltd.        TP-10101       4111      1,333.50 CAD  PASS
+
+Verdicts: 12 bills | PASS 6 | REVIEW 2 | BLOCK 4
+Rule hits (fail/warn): R1 1/1  R2 1/0  R3 1/0  R4 0/0  R5 0/0  R6 0/0  R7 1/1  R8 0/0
+Certificate body sha256: 767e60c8e8af95a0fbcd021437fcafe48efca8721788f1ddcdc53b89419deca2  (unsigned)
+Wrote demo/report.json
+Wrote demo/report.html
+
+==================================================================================
+ 2. Re-run the same check: the certificate body must be byte-identical
+==================================================================================
+run 1 body_sha256: 767e60c8e8af95a0fbcd021437fcafe48efca8721788f1ddcdc53b89419deca2
+run 2 body_sha256: 767e60c8e8af95a0fbcd021437fcafe48efca8721788f1ddcdc53b89419deca2
+=> identical
+Only difference between the two report.json files (timestamp sits outside the hashed body):
+1073c1073
+<   "generated_at": "2026-11-01T01:07:50+00:00"
+---
+>   "generated_at": "2026-11-01T01:07:51+00:00"
+report.html: byte-identical across runs
+
+$ billcheck verify demo/report.json --input demo/bills.json --input demo/pos.json --input demo/receipts.json
+OK    body_sha256 767e60c8e8af95a0fbcd021437fcafe48efca8721788f1ddcdc53b89419deca2 matches the canonical body
+OK    bills.json matches the hash recorded in the certificate
+OK    pos.json matches the hash recorded in the certificate
+OK    receipts.json matches the hash recorded in the certificate
+Note: the certificate is unsigned; this checks integrity, not authorship.
+
+==================================================================================
+ 3. Sync the 6 PASS bills to a mock ERP that times out after committing
+==================================================================================
+$ billcheck sync ... --mode compare --timeout-on-bills 7002,7008 --timeout-kind after_commit
+
+Pre-sync gate: 6 of 12 bills eligible to sync; held back: 7004 BLOCK, 7005 BLOCK, 7006 BLOCK, 7007 REVIEW, 7010 BLOCK, 7012 REVIEW
+Simulated ERP: the first create for bill(s) 7002, 7008 times out AFTER the bill is committed.
+Retry policy: up to 3 attempts per bill.
+
+[naive retry: resend the create on timeout]
+  bill 7001  INV-00417      attempt 1: create -> internalId 9001
+  bill 7002  INV-00431      attempt 1: create -> TIMEOUT (no response, but ERP committed internalId 9002)
+                            attempt 2: create -> internalId 9003
+  bill 7003  FLI-2026-0881  attempt 1: create -> internalId 9004
+  bill 7008  INV-00452      attempt 1: create -> TIMEOUT (no response, but ERP committed internalId 9005)
+                            attempt 2: create -> internalId 9006
+  bill 7009  QL-5530        attempt 1: create -> internalId 9007
+  bill 7011  TP-10101       attempt 1: create -> internalId 9008
+  ERP create calls this run: 8   ERP lookups this run: 0
+  ERP now holds 8 bill record(s) for 6 distinct invoice(s).
+  DUPLICATE in ERP: NS-VEND-0301 invoice INV-00431 -> internalIds [9002, 9003]
+  DUPLICATE in ERP: NS-VEND-0301 invoice INV-00452 -> internalIds [9005, 9006]
+
+[idempotent retry: deterministic key, look up before every write]
+  bill 7001  INV-00417      attempt 1: lookup BPF-433b8ec00029... -> none; create -> internalId 9001
+  bill 7002  INV-00431      attempt 1: lookup BPF-2c308550c003... -> none; create -> TIMEOUT (no response, but ERP committed internalId 9002)
+                            attempt 2: lookup BPF-2c308550c003... -> found internalId 9002; no write
+  bill 7003  FLI-2026-0881  attempt 1: lookup BPF-bcfe7fae1a8f... -> none; create -> internalId 9003
+  bill 7008  INV-00452      attempt 1: lookup BPF-850aed232713... -> none; create -> TIMEOUT (no response, but ERP committed internalId 9004)
+                            attempt 2: lookup BPF-850aed232713... -> found internalId 9004; no write
+  bill 7009  QL-5530        attempt 1: lookup BPF-b1fe87b205bf... -> none; create -> internalId 9005
+  bill 7011  TP-10101       attempt 1: lookup BPF-7d22a549820d... -> none; create -> internalId 9006
+  ERP create calls this run: 6   ERP lookups this run: 8
+  ERP now holds 6 bill record(s) for 6 distinct invoice(s).
+  Duplicates in ERP: none
+
+Result: naive retry -> 8 ERP bills (2 duplicate(s)); idempotent retry -> 6 ERP bills (0 duplicate(s)) for 6 eligible bills.
+
+==================================================================================
+ 4. Idempotent sync with a persisted ledger, run twice (e.g. a scheduler retry)
+==================================================================================
+$ billcheck sync ... --mode idempotent --ledger demo/out/ledger.json --erp-state demo/out/mock_erp.json --timeout-on-bills 7003
+Pre-sync gate: 6 of 12 bills eligible to sync; held back: 7004 BLOCK, 7005 BLOCK, 7006 BLOCK, 7007 REVIEW, 7010 BLOCK, 7012 REVIEW
+Simulated ERP: the first create for bill(s) 7003 times out AFTER the bill is committed.
+Retry policy: up to 3 attempts per bill.
+
+[idempotent retry: deterministic key, look up before every write]
+  bill 7001  INV-00417      attempt 1: lookup BPF-433b8ec00029... -> none; create -> internalId 9001
+  bill 7002  INV-00431      attempt 1: lookup BPF-2c308550c003... -> none; create -> internalId 9002
+  bill 7003  FLI-2026-0881  attempt 1: lookup BPF-bcfe7fae1a8f... -> none; create -> TIMEOUT (no response, but ERP committed internalId 9003)
+                            attempt 2: lookup BPF-bcfe7fae1a8f... -> found internalId 9003; no write
+  bill 7008  INV-00452      attempt 1: lookup BPF-850aed232713... -> none; create -> internalId 9004
+  bill 7009  QL-5530        attempt 1: lookup BPF-b1fe87b205bf... -> none; create -> internalId 9005
+  bill 7011  TP-10101       attempt 1: lookup BPF-7d22a549820d... -> none; create -> internalId 9006
+  ERP create calls this run: 6   ERP lookups this run: 7
+  ERP now holds 6 bill record(s) for 6 distinct invoice(s).
+  Duplicates in ERP: none
+
+$ billcheck sync ... --mode idempotent --ledger demo/out/ledger.json --erp-state demo/out/mock_erp.json   (second run, ERP healthy)
+Pre-sync gate: 6 of 12 bills eligible to sync; held back: 7004 BLOCK, 7005 BLOCK, 7006 BLOCK, 7007 REVIEW, 7010 BLOCK, 7012 REVIEW
+Retry policy: up to 3 attempts per bill.
+
+[idempotent retry: deterministic key, look up before every write]
+  bill 7001  INV-00417      ledger: BPF-433b8ec00029... already synced as internalId 9001; no write
+  bill 7002  INV-00431      ledger: BPF-2c308550c003... already synced as internalId 9002; no write
+  bill 7003  FLI-2026-0881  ledger: BPF-bcfe7fae1a8f... already synced as internalId 9003; no write
+  bill 7008  INV-00452      ledger: BPF-850aed232713... already synced as internalId 9004; no write
+  bill 7009  QL-5530        ledger: BPF-b1fe87b205bf... already synced as internalId 9005; no write
+  bill 7011  TP-10101       ledger: BPF-7d22a549820d... already synced as internalId 9006; no write
+  ERP create calls this run: 0   ERP lookups this run: 0
+  ERP now holds 6 bill record(s) for 6 distinct invoice(s).
+  Duplicates in ERP: none
+
+Done. Open demo/report.html for the screenshot-ready report.

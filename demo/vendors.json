@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "id": 301,
+      "name": "Larkspur Office Supply Co.",
+      "active": true,
+      "city": "Vancouver",
+      "state_province": "BC",
+      "country": "Canada",
+      "external_id": "NS-VEND-0301",
+      "currency": 1
+    },
+    {
+      "id": 302,
+      "name": "Fernhill Lab Instruments Ltd.",
+      "active": true,
+      "city": "Burnaby",
+      "state_province": "BC",
+      "country": "Canada",
+      "external_id": "NS-VEND-0302",
+      "currency": 1
+    },
+    {
+      "id": 303,
+      "name": "Quarry Lane Facilities Services",
+      "active": true,
+      "city": "Richmond",
+      "state_province": "BC",
+      "country": "Canada",
+      "external_id": "NS-VEND-0303",
+      "currency": 1
+    },
+    {
+      "id": 304,
+      "name": "Bluewren IT Hardware Inc.",
+      "active": true,
+      "city": "Surrey",
+      "state_province": "BC",
+      "country": "Canada",
+      "external_id": "NS-VEND-0304",
+      "currency": 1
+    },
+    {
+      "id": 305,
+      "name": "Tidewater Packaging Ltd.",
+      "active": true,
+      "city": "Mississauga",
+      "state_province": "ON",
+      "country": "Canada",
+      "external_id": "NS-VEND-0305",
+      "currency": 1
+    }
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "data": [
+    {
+      "id": 7001,
+      "uuid": "0a2e643a-5004-5f7a-858a-4f014bb748c1",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "INV-00417",
+      "invoice_date": "2026-10-14T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1504.00,
+      "tax_amount": 75.20,
+      "costs": [],
+      "invoice_total": 1579.20,
+      "items": [
+        {
+          "id": 70001,
+          "orderitem": {
+            "id": 9101,
+            "accountCode": "6100-00"
+          },
+          "po": {
+            "number": "4101",
+            "id": 4101,
+            "uuid": "4004359f-6e90-5cba-9255-fc614f7a51da"
+          },
+          "sku": "LOS-CP-10",
+          "description": "Copy paper, letter, 10-ream case",
+          "unit": "ea",
+          "quantity": "20.00",
+          "unit_cost": 48.50,
+          "total_cost": 970.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 48.50,
+          "tax_is_inclusive": false
+        },
+        {
+          "id": 70002,
+          "orderitem": {
+            "id": 9102,
+            "accountCode": "6100-00"
+          },
+          "po": {
+            "number": "4101",
+            "id": 4101,
+            "uuid": "4004359f-6e90-5cba-9255-fc614f7a51da"
+          },
+          "sku": "LOS-TN660",
+          "description": "Toner cartridge TN-660",
+          "unit": "ea",
+          "quantity": "6.00",
+          "unit_cost": 89.00,
+          "total_cost": 534.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 26.70,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7002,
+      "uuid": "6a25ab7f-6e74-5a30-99d6-c13733b59911",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "INV-00431",
+      "invoice_date": "2026-10-16T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1648.00,
+      "tax_amount": 82.40,
+      "costs": [
+        {
+          "name": "Freight",
+          "amount": "45.00"
+        }
+      ],
+      "invoice_total": 1775.40,
+      "items": [
+        {
+          "id": 70003,
+          "orderitem": {
+            "id": 9103,
+            "accountCode": "6100-00"
+          },
+          "po": {
+            "number": "4102",
+            "id": 4102,
+            "uuid": "42ae350e-82eb-5d35-b420-4233ff316c8c"
+          },
+          "sku": "LOS-CH-ERG",
+          "description": "Ergonomic task chair",
+          "unit": "ea",
+          "quantity": "4.00",
+          "unit_cost": 412.00,
+          "total_cost": 1648.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 82.40,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7003,
+      "uuid": "25c4ab72-b35b-5e37-a7cc-f4b9a48e56af",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 302,
+        "name": "Fernhill Lab Instruments Ltd."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "FLI-2026-0881",
+      "invoice_date": "2026-10-09T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1370.00,
+      "tax_amount": 164.40,
+      "costs": [],
+      "invoice_total": 1534.40,
+      "items": [
+        {
+          "id": 70004,
+          "orderitem": {
+            "id": 9104,
+            "accountCode": "6200-00"
+          },
+          "po": {
+            "number": "4103",
+            "id": 4103,
+            "uuid": "96aca683-d429-5078-a7cf-70556f7e0a0c"
+          },
+          "sku": "FLI-GLV-M",
+          "description": "Nitrile gloves, box of 100",
+          "unit": "ea",
+          "quantity": "50.00",
+          "unit_cost": 14.20,
+          "total_cost": 710.00,
+          "tax": 3,
+          "tax_name": "GST + PST (BC) 12%",
+          "tax_percentage": "12.000",
+          "tax_amount": 85.20,
+          "tax_is_inclusive": false
+        },
+        {
+          "id": 70005,
+          "orderitem": {
+            "id": 9105,
+            "accountCode": "6200-00"
+          },
+          "po": {
+            "number": "4103",
+            "id": 4103,
+            "uuid": "96aca683-d429-5078-a7cf-70556f7e0a0c"
+          },
+          "sku": "FLI-PT200",
+          "description": "Pipette tips 200uL, rack of 96",
+          "unit": "ea",
+          "quantity": "30.00",
+          "unit_cost": 22.00,
+          "total_cost": 660.00,
+          "tax": 3,
+          "tax_name": "GST + PST (BC) 12%",
+          "tax_percentage": "12.000",
+          "tax_amount": 79.20,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7004,
+      "uuid": "f4cd85ea-24d7-5aa4-9515-83c1f27e56b5",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 303,
+        "name": "Quarry Lane Facilities Services"
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "QL-5521",
+      "invoice_date": "2026-10-20T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1840.00,
+      "tax_amount": 92.00,
+      "costs": [],
+      "invoice_total": 1982.00,
+      "items": [
+        {
+          "id": 70006,
+          "orderitem": {
+            "id": 9106,
+            "accountCode": "6300-00"
+          },
+          "po": {
+            "number": "4104",
+            "id": 4104,
+            "uuid": "95d449d3-2506-578c-9fb7-75cbf6ee1f35"
+          },
+          "sku": "QL-HVAC-Q",
+          "description": "HVAC quarterly maintenance visit",
+          "unit": "ea",
+          "quantity": "1.00",
+          "unit_cost": 1840.00,
+          "total_cost": 1840.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 92.00,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7005,
+      "uuid": "b87a2eea-8ca1-565c-91dc-b7dd0140002d",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 304,
+        "name": "Bluewren IT Hardware Inc."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "BW-INV-77812",
+      "invoice_date": "2026-10-22T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 18390.00,
+      "tax_amount": 2206.80,
+      "costs": [],
+      "invoice_total": 20596.80,
+      "items": [
+        {
+          "id": 70007,
+          "orderitem": {
+            "id": 9107,
+            "accountCode": "1520-00"
+          },
+          "po": {
+            "number": "4105",
+            "id": 4105,
+            "uuid": "7a037086-9a35-5de0-bcda-62130edf9b09"
+          },
+          "sku": "BW-LT14-32",
+          "description": "Laptop 14in, 32GB",
+          "unit": "ea",
+          "quantity": "10.00",
+          "unit_cost": 1650.00,
+          "total_cost": 16500.00,
+          "tax": 3,
+          "tax_name": "GST + PST (BC) 12%",
+          "tax_percentage": "12.000",
+          "tax_amount": 1980.00,
+          "tax_is_inclusive": false
+        },
+        {
+          "id": 70008,
+          "orderitem": {
+            "id": 9108,
+            "accountCode": "1520-00"
+          },
+          "po": {
+            "number": "4105",
+            "id": 4105,
+            "uuid": "7a037086-9a35-5de0-bcda-62130edf9b09"
+          },
+          "sku": "BW-DOCK-C",
+          "description": "USB-C docking station",
+          "unit": "ea",
+          "quantity": "10.00",
+          "unit_cost": 189.00,
+          "total_cost": 1890.00,
+          "tax": 3,
+          "tax_name": "GST + PST (BC) 12%",
+          "tax_percentage": "12.000",
+          "tax_amount": 226.80,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7006,
+      "uuid": "e841bdec-d9d2-560d-b110-222df8d019db",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 305,
+        "name": "Tidewater Packaging Ltd."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "TP-10093",
+      "invoice_date": "2026-10-08T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1270.00,
+      "tax_amount": 165.10,
+      "costs": [],
+      "invoice_total": 1435.10,
+      "items": [
+        {
+          "id": 70009,
+          "orderitem": {
+            "id": 9109,
+            "accountCode": "5100-00"
+          },
+          "po": {
+            "number": "4106",
+            "id": 4106,
+            "uuid": "c8818f96-71b1-540a-8c98-75332caf6918"
+          },
+          "sku": "TP-BX181212",
+          "description": "Corrugated box 18x12x12, bundle of 25",
+          "unit": "ea",
+          "quantity": "40.00",
+          "unit_cost": 31.75,
+          "total_cost": 1270.00,
+          "tax": 7,
+          "tax_name": "HST (ON) 13%",
+          "tax_percentage": "13.000",
+          "tax_amount": 165.10,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7007,
+      "uuid": "d7ec9311-1a38-5854-925a-cea531619cf4",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 302,
+        "name": "Fernhill Lab Instruments Ltd."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "FLI-2026-0912",
+      "invoice_date": "2026-10-21T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 787.20,
+      "tax_amount": 94.46,
+      "costs": [],
+      "invoice_total": 881.66,
+      "items": [
+        {
+          "id": 70010,
+          "orderitem": {
+            "id": 9110,
+            "accountCode": "6200-00"
+          },
+          "po": {
+            "number": "4107",
+            "id": 4107,
+            "uuid": "2dd32561-b309-5540-bf41-2c5602db15ff"
+          },
+          "sku": "FLI-CT50",
+          "description": "Centrifuge tubes 50mL, case of 500",
+          "unit": "ea",
+          "quantity": "12.00",
+          "unit_cost": 65.60,
+          "total_cost": 787.20,
+          "tax": 3,
+          "tax_name": "GST + PST (BC) 12%",
+          "tax_percentage": "12.000",
+          "tax_amount": 94.46,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7008,
+      "uuid": "924ae8f9-9f5d-5d60-bf74-259768f315e4",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "INV-00452",
+      "invoice_date": "2026-10-23T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 276.00,
+      "tax_amount": 13.80,
+      "costs": [],
+      "invoice_total": 289.80,
+      "items": [
+        {
+          "id": 70011,
+          "orderitem": {
+            "id": 9111,
+            "accountCode": "6100-00"
+          },
+          "po": {
+            "number": "4108",
+            "id": 4108,
+            "uuid": "bb4737a6-27f1-5233-b00e-2f23cce1fcc3"
+          },
+          "sku": "LOS-WBM-12",
+          "description": "Whiteboard markers, box of 12",
+          "unit": "ea",
+          "quantity": "15.00",
+          "unit_cost": 18.40,
+          "total_cost": 276.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 13.80,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7009,
+      "uuid": "2ce2bbb3-9351-59dd-aea2-8a56860e9ed1",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 303,
+        "name": "Quarry Lane Facilities Services"
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "QL-5530",
+      "invoice_date": "2026-10-27T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 620.00,
+      "tax_amount": 31.00,
+      "costs": [],
+      "invoice_total": 651.00,
+      "items": [
+        {
+          "id": 70012,
+          "orderitem": {
+            "id": 9113,
+            "accountCode": "6300-00"
+          },
+          "po": {
+            "number": "4110",
+            "id": 4110,
+            "uuid": "e9e481a9-ed28-50bf-87ba-42ea1d740ecc"
+          },
+          "sku": "QL-WIN-OCT",
+          "description": "Window cleaning, October",
+          "unit": "ea",
+          "quantity": "1.00",
+          "unit_cost": 620.00,
+          "total_cost": 620.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 31.00,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7010,
+      "uuid": "bd8c1c86-a4a5-5fab-b016-9f32c99b723d",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "Inv 417",
+      "invoice_date": "2026-10-24T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 240.00,
+      "tax_amount": 12.00,
+      "costs": [],
+      "invoice_total": 252.00,
+      "items": [
+        {
+          "id": 70013,
+          "orderitem": {
+            "id": 9112,
+            "accountCode": "6100-00"
+          },
+          "po": {
+            "number": "4109",
+            "id": 4109,
+            "uuid": "521e5c11-037d-50f5-8a3b-de6973c7f501"
+          },
+          "sku": "LOS-ORG-M",
+          "description": "Desk organizer, mesh",
+          "unit": "ea",
+          "quantity": "10.00",
+          "unit_cost": 24.00,
+          "total_cost": 240.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 12.00,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7011,
+      "uuid": "863b1926-9268-56db-b9ee-c1fc2057dae7",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 305,
+        "name": "Tidewater Packaging Ltd."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "TP-10101",
+      "invoice_date": "2026-10-15T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1270.00,
+      "tax_amount": 63.50,
+      "costs": [],
+      "invoice_total": 1333.50,
+      "items": [
+        {
+          "id": 70014,
+          "orderitem": {
+            "id": 9114,
+            "accountCode": "5100-00"
+          },
+          "po": {
+            "number": "4111",
+            "id": 4111,
+            "uuid": "04c231eb-0695-5791-ac7e-2f3aedebfbe3"
+          },
+          "sku": "TP-BX181212",
+          "description": "Corrugated box 18x12x12, bundle of 25 (standing order)",
+          "unit": "ea",
+          "quantity": "40.00",
+          "unit_cost": 31.75,
+          "total_cost": 1270.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 63.50,
+          "tax_is_inclusive": false
+        }
+      ]
+    },
+    {
+      "id": 7012,
+      "uuid": "a284fa1f-23e3-53f5-897f-8236080db90d",
+      "status": 0,
+      "type": 0,
+      "invoice_created": true,
+      "vendor": {
+        "id": 305,
+        "name": "Tidewater Packaging Ltd."
+      },
+      "currency": {
+        "id": 1,
+        "name": "CAD"
+      },
+      "invoice_number": "TP-10107",
+      "invoice_date": "2026-10-19T00:00:00Z",
+      "due_date": null,
+      "gl_post_date": null,
+      "subtotal_cost": 1270.00,
+      "tax_amount": 63.50,
+      "costs": [],
+      "invoice_total": 1333.50,
+      "items": [
+        {
+          "id": 70015,
+          "orderitem": {
+            "id": 9114,
+            "accountCode": "5100-00"
+          },
+          "po": {
+            "number": "4111",
+            "id": 4111,
+            "uuid": "04c231eb-0695-5791-ac7e-2f3aedebfbe3"
+          },
+          "sku": "TP-BX181212",
+          "description": "Corrugated box 18x12x12, bundle of 25 (standing order)",
+          "unit": "ea",
+          "quantity": "40.00",
+          "unit_cost": 31.75,
+          "total_cost": 1270.00,
+          "tax": 2,
+          "tax_name": "GST 5%",
+          "tax_percentage": "5.000",
+          "tax_amount": 63.50,
+          "tax_is_inclusive": false
+        }
+      ]
+    }
+  ]
+}

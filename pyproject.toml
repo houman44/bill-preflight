@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "billcheck"
+version = "0.1.0"
+description = "Bill Pre-flight: deterministic checks between AI-drafted bills and the ERP (prototype)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Houman Azimi" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+billcheck = "billcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

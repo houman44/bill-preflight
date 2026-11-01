@@ -1,0 +1,528 @@
+{
+  "data": [
+    {
+      "procurify_PO": 4101,
+      "number": "4101",
+      "uuid": "4004359f-6e90-5cba-9255-fc614f7a51da",
+      "date": "2026-09-15T17:20:00Z",
+      "pref_vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co.",
+        "active": true,
+        "external_id": "NS-VEND-0301"
+      },
+      "vendor_name": "Larkspur Office Supply Co.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "1504.00",
+      "total": "1504.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9101,
+          "PO_line_num": 1,
+          "name": "Copy paper, letter, 10-ream case",
+          "sku": "LOS-CP-10",
+          "unit": "ea",
+          "quantity": 20,
+          "price": "48.50",
+          "total_cost": "970.00",
+          "accountCode": "6100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4101,
+          "purchase_order_number": "4101"
+        },
+        {
+          "id": 9102,
+          "PO_line_num": 2,
+          "name": "Toner cartridge TN-660",
+          "sku": "LOS-TN660",
+          "unit": "ea",
+          "quantity": 6,
+          "price": "89.00",
+          "total_cost": "534.00",
+          "accountCode": "6100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4101,
+          "purchase_order_number": "4101"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4102,
+      "number": "4102",
+      "uuid": "42ae350e-82eb-5d35-b420-4233ff316c8c",
+      "date": "2026-10-02T16:05:00Z",
+      "pref_vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co.",
+        "active": true,
+        "external_id": "NS-VEND-0301"
+      },
+      "vendor_name": "Larkspur Office Supply Co.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "1648.00",
+      "total": "1648.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9103,
+          "PO_line_num": 1,
+          "name": "Ergonomic task chair",
+          "sku": "LOS-CH-ERG",
+          "unit": "ea",
+          "quantity": 4,
+          "price": "412.00",
+          "total_cost": "1648.00",
+          "accountCode": "6100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4102,
+          "purchase_order_number": "4102"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4103,
+      "number": "4103",
+      "uuid": "96aca683-d429-5078-a7cf-70556f7e0a0c",
+      "date": "2026-09-20T18:40:00Z",
+      "pref_vendor": {
+        "id": 302,
+        "name": "Fernhill Lab Instruments Ltd.",
+        "active": true,
+        "external_id": "NS-VEND-0302"
+      },
+      "vendor_name": "Fernhill Lab Instruments Ltd.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "1370.00",
+      "total": "1370.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9104,
+          "PO_line_num": 1,
+          "name": "Nitrile gloves, box of 100",
+          "sku": "FLI-GLV-M",
+          "unit": "ea",
+          "quantity": 50,
+          "price": "14.20",
+          "total_cost": "710.00",
+          "accountCode": "6200-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4103,
+          "purchase_order_number": "4103"
+        },
+        {
+          "id": 9105,
+          "PO_line_num": 2,
+          "name": "Pipette tips 200uL, rack of 96",
+          "sku": "FLI-PT200",
+          "unit": "ea",
+          "quantity": 30,
+          "price": "22.00",
+          "total_cost": "660.00",
+          "accountCode": "6200-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4103,
+          "purchase_order_number": "4103"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4104,
+      "number": "4104",
+      "uuid": "95d449d3-2506-578c-9fb7-75cbf6ee1f35",
+      "date": "2026-10-01T15:00:00Z",
+      "pref_vendor": {
+        "id": 303,
+        "name": "Quarry Lane Facilities Services",
+        "active": true,
+        "external_id": "NS-VEND-0303"
+      },
+      "vendor_name": "Quarry Lane Facilities Services",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "1840.00",
+      "total": "1840.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9106,
+          "PO_line_num": 1,
+          "name": "HVAC quarterly maintenance visit",
+          "sku": "QL-HVAC-Q",
+          "unit": "ea",
+          "quantity": 1,
+          "price": "1840.00",
+          "total_cost": "1840.00",
+          "accountCode": "6300-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4104,
+          "purchase_order_number": "4104"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4105,
+      "number": "4105",
+      "uuid": "7a037086-9a35-5de0-bcda-62130edf9b09",
+      "date": "2026-10-05T19:10:00Z",
+      "pref_vendor": {
+        "id": 304,
+        "name": "Bluewren IT Hardware Inc.",
+        "active": true,
+        "external_id": "NS-VEND-0304"
+      },
+      "vendor_name": "Bluewren IT Hardware Inc.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "18390.00",
+      "total": "18390.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9107,
+          "PO_line_num": 1,
+          "name": "Laptop 14in, 32GB",
+          "sku": "BW-LT14-32",
+          "unit": "ea",
+          "quantity": 10,
+          "price": "1650.00",
+          "total_cost": "16500.00",
+          "accountCode": "1520-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4105,
+          "purchase_order_number": "4105"
+        },
+        {
+          "id": 9108,
+          "PO_line_num": 2,
+          "name": "USB-C docking station",
+          "sku": "BW-DOCK-C",
+          "unit": "ea",
+          "quantity": 10,
+          "price": "189.00",
+          "total_cost": "1890.00",
+          "accountCode": "1520-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4105,
+          "purchase_order_number": "4105"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4106,
+      "number": "4106",
+      "uuid": "c8818f96-71b1-540a-8c98-75332caf6918",
+      "date": "2026-09-25T14:30:00Z",
+      "pref_vendor": {
+        "id": 305,
+        "name": "Tidewater Packaging Ltd.",
+        "active": true,
+        "external_id": "NS-VEND-0305"
+      },
+      "vendor_name": "Tidewater Packaging Ltd.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "1270.00",
+      "total": "1270.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9109,
+          "PO_line_num": 1,
+          "name": "Corrugated box 18x12x12, bundle of 25",
+          "sku": "TP-BX181212",
+          "unit": "ea",
+          "quantity": 40,
+          "price": "31.75",
+          "total_cost": "1270.00",
+          "accountCode": "5100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4106,
+          "purchase_order_number": "4106"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4107,
+      "number": "4107",
+      "uuid": "2dd32561-b309-5540-bf41-2c5602db15ff",
+      "date": "2026-10-10T17:55:00Z",
+      "pref_vendor": {
+        "id": 302,
+        "name": "Fernhill Lab Instruments Ltd.",
+        "active": true,
+        "external_id": "NS-VEND-0302"
+      },
+      "vendor_name": "Fernhill Lab Instruments Ltd.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "768.00",
+      "total": "768.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9110,
+          "PO_line_num": 1,
+          "name": "Centrifuge tubes 50mL, case of 500",
+          "sku": "FLI-CT50",
+          "unit": "ea",
+          "quantity": 12,
+          "price": "64.00",
+          "total_cost": "768.00",
+          "accountCode": "6200-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4107,
+          "purchase_order_number": "4107"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4108,
+      "number": "4108",
+      "uuid": "bb4737a6-27f1-5233-b00e-2f23cce1fcc3",
+      "date": "2026-10-12T16:45:00Z",
+      "pref_vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co.",
+        "active": true,
+        "external_id": "NS-VEND-0301"
+      },
+      "vendor_name": "Larkspur Office Supply Co.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "276.00",
+      "total": "276.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9111,
+          "PO_line_num": 1,
+          "name": "Whiteboard markers, box of 12",
+          "sku": "LOS-WBM-12",
+          "unit": "ea",
+          "quantity": 15,
+          "price": "18.40",
+          "total_cost": "276.00",
+          "accountCode": "6100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4108,
+          "purchase_order_number": "4108"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4109,
+      "number": "4109",
+      "uuid": "521e5c11-037d-50f5-8a3b-de6973c7f501",
+      "date": "2026-10-18T20:15:00Z",
+      "pref_vendor": {
+        "id": 301,
+        "name": "Larkspur Office Supply Co.",
+        "active": true,
+        "external_id": "NS-VEND-0301"
+      },
+      "vendor_name": "Larkspur Office Supply Co.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "240.00",
+      "total": "240.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9112,
+          "PO_line_num": 1,
+          "name": "Desk organizer, mesh",
+          "sku": "LOS-ORG-M",
+          "unit": "ea",
+          "quantity": 10,
+          "price": "24.00",
+          "total_cost": "240.00",
+          "accountCode": "6100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4109,
+          "purchase_order_number": "4109"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4110,
+      "number": "4110",
+      "uuid": "e9e481a9-ed28-50bf-87ba-42ea1d740ecc",
+      "date": "2026-10-03T15:25:00Z",
+      "pref_vendor": {
+        "id": 303,
+        "name": "Quarry Lane Facilities Services",
+        "active": true,
+        "external_id": "NS-VEND-0303"
+      },
+      "vendor_name": "Quarry Lane Facilities Services",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "620.00",
+      "total": "620.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9113,
+          "PO_line_num": 1,
+          "name": "Window cleaning, October",
+          "sku": "QL-WIN-OCT",
+          "unit": "ea",
+          "quantity": 1,
+          "price": "620.00",
+          "total_cost": "620.00",
+          "accountCode": "6300-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4110,
+          "purchase_order_number": "4110"
+        }
+      ]
+    },
+    {
+      "procurify_PO": 4111,
+      "number": "4111",
+      "uuid": "04c231eb-0695-5791-ac7e-2f3aedebfbe3",
+      "date": "2026-10-06T13:50:00Z",
+      "pref_vendor": {
+        "id": 305,
+        "name": "Tidewater Packaging Ltd.",
+        "active": true,
+        "external_id": "NS-VEND-0305"
+      },
+      "vendor_name": "Tidewater Packaging Ltd.",
+      "purchased_currency": {
+        "id": 1,
+        "name": "CAD",
+        "rate": "1.00000000",
+        "base": true
+      },
+      "subtotal": "2540.00",
+      "total": "2540.00",
+      "fulfilment_status": "full",
+      "active": true,
+      "version": 1,
+      "order_items": [
+        {
+          "id": 9114,
+          "PO_line_num": 1,
+          "name": "Corrugated box 18x12x12, bundle of 25 (standing order)",
+          "sku": "TP-BX181212",
+          "unit": "ea",
+          "quantity": 80,
+          "price": "31.75",
+          "total_cost": "2540.00",
+          "accountCode": "5100-00",
+          "currency": {
+            "id": 1,
+            "name": "CAD"
+          },
+          "purchase_order": 4111,
+          "purchase_order_number": "4111"
+        }
+      ]
+    }
+  ]
+}

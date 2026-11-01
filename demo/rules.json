@@ -1,0 +1,35 @@
+{
+  "rules_config_name": "demo-netsuite-cad",
+  "as_of_date": "2026-10-31",
+  "amount_tolerance": "0.01",
+  "duplicate_check": {
+    "ignore_prefixes": ["invoice", "inv", "no"],
+    "same_amount_window_days": 7
+  },
+  "three_way_match": {
+    "price_warn_pct": "1.0",
+    "price_fail_pct": "5.0"
+  },
+  "closed_periods": [
+    {"name": "FY2026 Q3", "start": "2026-07-01", "end": "2026-09-30"}
+  ],
+  "erp_mappings": {
+    "tax_codes": {
+      "1": {"name": "Exempt", "rate": "0", "erp_tax_code": "CA-EXEMPT"},
+      "2": {"name": "GST 5%", "rate": "5", "erp_tax_code": "CA-GST-5"},
+      "3": {"name": "GST + PST (BC) 12%", "rate": "12", "erp_tax_code": "CA-BC-GSTPST-12"}
+    },
+    "account_codes": {
+      "1520-00": {"erp_account": "1520 Computer Equipment", "active": true},
+      "5100-00": {"erp_account": "5100 Packaging Materials", "active": true},
+      "6100-00": {"erp_account": "6100 Office Supplies", "active": true},
+      "6200-00": {"erp_account": "6200 Lab Consumables", "active": true},
+      "6300-00": {"erp_account": "6300 Facilities Maintenance", "active": true}
+    }
+  },
+  "severity_overrides": {},
+  "sync": {
+    "sync_review_bills": false,
+    "max_attempts": 3
+  }
+}

@@ -1,0 +1,1074 @@
+{
+  "body": {
+    "as_of_date": "2026-10-31",
+    "bills": [
+      {
+        "bill_id": 7001,
+        "currency": "CAD",
+        "idempotency_key": "BPF-433b8ec000295603f022f58b7c185b42",
+        "invoice_date": "2026-10-14",
+        "invoice_number": "INV-00417",
+        "invoice_number_normalised": "417",
+        "invoice_total": "1579.20",
+        "po_ids": [
+          4101
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice '417' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "2 line(s) = 1504.00; + tax 75.20 + other 0.00 = 1579.20",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6100-00 -> 6100 Office Supplies",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-14; posting date 2026-10-14 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 301 matches PO(s) 4101; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "2 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 301,
+          "name": "Larkspur Office Supply Co."
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7002,
+        "currency": "CAD",
+        "idempotency_key": "BPF-2c308550c0030b333eaac357e032ba13",
+        "invoice_date": "2026-10-16",
+        "invoice_number": "INV-00431",
+        "invoice_number_normalised": "431",
+        "invoice_total": "1775.40",
+        "po_ids": [
+          4102
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice '431' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 1648.00; + tax 82.40 + other 45.00 = 1775.40",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6100-00 -> 6100 Office Supplies",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-16; posting date 2026-10-16 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 301 matches PO(s) 4102; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 301,
+          "name": "Larkspur Office Supply Co."
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7003,
+        "currency": "CAD",
+        "idempotency_key": "BPF-bcfe7fae1a8f0d0e6496591a00584f74",
+        "invoice_date": "2026-10-09",
+        "invoice_number": "FLI-2026-0881",
+        "invoice_number_normalised": "fli-2026-881",
+        "invoice_total": "1534.40",
+        "po_ids": [
+          4103
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'fli-2026-881' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "2 line(s) = 1370.00; + tax 164.40 + other 0.00 = 1534.40",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-BC-GSTPST-12",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6200-00 -> 6200 Lab Consumables",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-09; posting date 2026-10-09 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 302 matches PO(s) 4103; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "2 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 302,
+          "name": "Fernhill Lab Instruments Ltd."
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7004,
+        "currency": "CAD",
+        "idempotency_key": "BPF-4d4e3d70a31c25796b4600ce830e0a8c",
+        "invoice_date": "2026-10-20",
+        "invoice_number": "QL-5521",
+        "invoice_number_normalised": "ql-5521",
+        "invoice_total": "1982.00",
+        "po_ids": [
+          4104
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'ql-5521' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [
+              {
+                "code": "TOTAL_MISMATCH",
+                "evidence": {
+                  "difference": "50.00",
+                  "expected_total": "1932.00",
+                  "invoice_total": "1982.00",
+                  "other_costs": [],
+                  "subtotal": "1840.00",
+                  "tax_amount": "92.00",
+                  "tolerance": "0.01"
+                },
+                "message": "subtotal 1840.00 + tax 92.00 + other costs 0.00 = 1932.00, invoice total says 1982.00",
+                "status": "FAIL"
+              }
+            ],
+            "rule_id": "R2",
+            "status": "FAIL",
+            "summary": "subtotal 1840.00 + tax 92.00 + other costs 0.00 = 1932.00, invoice total says 1982.00",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6300-00 -> 6300 Facilities Maintenance",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-20; posting date 2026-10-20 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 303 matches PO(s) 4104; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 303,
+          "name": "Quarry Lane Facilities Services"
+        },
+        "verdict": "BLOCK"
+      },
+      {
+        "bill_id": 7005,
+        "currency": "CAD",
+        "idempotency_key": "BPF-d4c974673858b9b350f5771994fd7486",
+        "invoice_date": "2026-10-22",
+        "invoice_number": "BW-INV-77812",
+        "invoice_number_normalised": "bw-inv-77812",
+        "invoice_total": "20596.80",
+        "po_ids": [
+          4105
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'bw-inv-77812' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "2 line(s) = 18390.00; + tax 2206.80 + other 0.00 = 20596.80",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-BC-GSTPST-12",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "1520-00 -> 1520 Computer Equipment",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-22; posting date 2026-10-22 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 304 matches PO(s) 4105; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [
+              {
+                "code": "BILLED_OVER_RECEIVED",
+                "evidence": {
+                  "billed_cumulative": "10",
+                  "billed_earlier": "0",
+                  "billed_earlier_on_bills": [],
+                  "billed_this_bill": "10",
+                  "item": "Laptop 14in, 32GB",
+                  "line_id": 70007,
+                  "order_item": 9107,
+                  "ordered": "10",
+                  "po_line": 1,
+                  "po_number": "4105",
+                  "received_fail": "1",
+                  "received_pass": "8"
+                },
+                "message": "Laptop 14in, 32GB: billing 10 but only 8 received (PO 4105 line 1)",
+                "status": "FAIL"
+              }
+            ],
+            "rule_id": "R7",
+            "status": "FAIL",
+            "summary": "Laptop 14in, 32GB: billing 10 but only 8 received (PO 4105 line 1)",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 304,
+          "name": "Bluewren IT Hardware Inc."
+        },
+        "verdict": "BLOCK"
+      },
+      {
+        "bill_id": 7006,
+        "currency": "CAD",
+        "idempotency_key": "BPF-08121140bbc7e7e92ccd5b41c0c869c8",
+        "invoice_date": "2026-10-08",
+        "invoice_number": "TP-10093",
+        "invoice_number_normalised": "tp-10093",
+        "invoice_total": "1435.10",
+        "po_ids": [
+          4106
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'tp-10093' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 1270.00; + tax 165.10 + other 0.00 = 1435.10",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [
+              {
+                "code": "TAX_CODE_UNMAPPED",
+                "evidence": {
+                  "line_id": 70009,
+                  "mapped_tax_ids": [
+                    "1",
+                    "2",
+                    "3"
+                  ],
+                  "tax_id": 7,
+                  "tax_name": "HST (ON) 13%"
+                },
+                "message": "line 70009: tax 'HST (ON) 13%' (id 7) has no ERP tax code mapping",
+                "status": "FAIL"
+              }
+            ],
+            "rule_id": "R3",
+            "status": "FAIL",
+            "summary": "line 70009: tax 'HST (ON) 13%' (id 7) has no ERP tax code mapping",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "5100-00 -> 5100 Packaging Materials",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-08; posting date 2026-10-08 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 305 matches PO(s) 4106; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 305,
+          "name": "Tidewater Packaging Ltd."
+        },
+        "verdict": "BLOCK"
+      },
+      {
+        "bill_id": 7007,
+        "currency": "CAD",
+        "idempotency_key": "BPF-0a164fd7b353203550e9b588a14a4912",
+        "invoice_date": "2026-10-21",
+        "invoice_number": "FLI-2026-0912",
+        "invoice_number_normalised": "fli-2026-912",
+        "invoice_total": "881.66",
+        "po_ids": [
+          4107
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'fli-2026-912' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 787.20; + tax 94.46 + other 0.00 = 881.66",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-BC-GSTPST-12",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6200-00 -> 6200 Lab Consumables",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-21; posting date 2026-10-21 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 302 matches PO(s) 4107; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [
+              {
+                "code": "PRICE_VARIANCE_WARN",
+                "evidence": {
+                  "bill_unit_cost": "65.60",
+                  "fail_above_pct": "5",
+                  "item": "Centrifuge tubes 50mL, case of 500",
+                  "line_id": 70010,
+                  "po_number": "4107",
+                  "po_price": "64.00",
+                  "variance_pct": "+2.50",
+                  "warn_above_pct": "1"
+                },
+                "message": "Centrifuge tubes 50mL, case of 500: unit price 65.60 vs PO 64.00 (+2.50%)",
+                "status": "WARN"
+              }
+            ],
+            "rule_id": "R7",
+            "status": "WARN",
+            "summary": "Centrifuge tubes 50mL, case of 500: unit price 65.60 vs PO 64.00 (+2.50%)",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 302,
+          "name": "Fernhill Lab Instruments Ltd."
+        },
+        "verdict": "REVIEW"
+      },
+      {
+        "bill_id": 7008,
+        "currency": "CAD",
+        "idempotency_key": "BPF-850aed232713a33fbf0889bce6203e79",
+        "invoice_date": "2026-10-23",
+        "invoice_number": "INV-00452",
+        "invoice_number_normalised": "452",
+        "invoice_total": "289.80",
+        "po_ids": [
+          4108
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice '452' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 276.00; + tax 13.80 + other 0.00 = 289.80",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6100-00 -> 6100 Office Supplies",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-23; posting date 2026-10-23 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 301 matches PO(s) 4108; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 301,
+          "name": "Larkspur Office Supply Co."
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7009,
+        "currency": "CAD",
+        "idempotency_key": "BPF-b1fe87b205bfa0f73db7ba9ec9695338",
+        "invoice_date": "2026-10-27",
+        "invoice_number": "QL-5530",
+        "invoice_number_normalised": "ql-5530",
+        "invoice_total": "651.00",
+        "po_ids": [
+          4110
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'ql-5530' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 620.00; + tax 31.00 + other 0.00 = 651.00",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6300-00 -> 6300 Facilities Maintenance",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-27; posting date 2026-10-27 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 303 matches PO(s) 4110; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 303,
+          "name": "Quarry Lane Facilities Services"
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7010,
+        "currency": "CAD",
+        "idempotency_key": "BPF-ca1b3a8bbe401f516cd4953ba774068c",
+        "invoice_date": "2026-10-24",
+        "invoice_number": "Inv 417",
+        "invoice_number_normalised": "417",
+        "invoice_total": "252.00",
+        "po_ids": [
+          4109
+        ],
+        "rules": [
+          {
+            "findings": [
+              {
+                "code": "DUPLICATE_INVOICE_NUMBER",
+                "evidence": {
+                  "normalised": "417",
+                  "other_bill_id": 7001,
+                  "other_invoice_number": "INV-00417",
+                  "other_po_ids": [
+                    4101
+                  ],
+                  "same_po": false,
+                  "this_invoice_number": "Inv 417",
+                  "this_po_ids": [
+                    4109
+                  ]
+                },
+                "message": "invoice 'Inv 417' matches bill 7001 invoice 'INV-00417' (normalised '417')",
+                "status": "FAIL"
+              }
+            ],
+            "rule_id": "R1",
+            "status": "FAIL",
+            "summary": "invoice 'Inv 417' matches bill 7001 invoice 'INV-00417' (normalised '417')",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 240.00; + tax 12.00 + other 0.00 = 252.00",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "6100-00 -> 6100 Office Supplies",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-24; posting date 2026-10-24 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 301 matches PO(s) 4109; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 301,
+          "name": "Larkspur Office Supply Co."
+        },
+        "verdict": "BLOCK"
+      },
+      {
+        "bill_id": 7011,
+        "currency": "CAD",
+        "idempotency_key": "BPF-7d22a549820dad4a451d9a4ec44ece12",
+        "invoice_date": "2026-10-15",
+        "invoice_number": "TP-10101",
+        "invoice_number_normalised": "tp-10101",
+        "invoice_total": "1333.50",
+        "po_ids": [
+          4111
+        ],
+        "rules": [
+          {
+            "findings": [],
+            "rule_id": "R1",
+            "status": "PASS",
+            "summary": "no earlier bill from this vendor with invoice 'tp-10101' or same total within 7 days",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 1270.00; + tax 63.50 + other 0.00 = 1333.50",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "5100-00 -> 5100 Packaging Materials",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-15; posting date 2026-10-15 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 305 matches PO(s) 4111; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 305,
+          "name": "Tidewater Packaging Ltd."
+        },
+        "verdict": "PASS"
+      },
+      {
+        "bill_id": 7012,
+        "currency": "CAD",
+        "idempotency_key": "BPF-cccac15c40a67c9c9ee738596bdef634",
+        "invoice_date": "2026-10-19",
+        "invoice_number": "TP-10107",
+        "invoice_number_normalised": "tp-10107",
+        "invoice_total": "1333.50",
+        "po_ids": [
+          4111
+        ],
+        "rules": [
+          {
+            "findings": [
+              {
+                "code": "POSSIBLE_DUPLICATE_AMOUNT_DATE",
+                "evidence": {
+                  "days_apart": 4,
+                  "other_bill_id": 7011,
+                  "other_invoice_number": "TP-10101",
+                  "total": "1333.50",
+                  "window_days": 7
+                },
+                "message": "same vendor and total 1333.50 as bill 7011 ('TP-10101'), 4 day(s) apart",
+                "status": "WARN"
+              }
+            ],
+            "rule_id": "R1",
+            "status": "WARN",
+            "summary": "same vendor and total 1333.50 as bill 7011 ('TP-10101'), 4 day(s) apart",
+            "title": "Duplicate invoice (same vendor, any PO)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R2",
+            "status": "PASS",
+            "summary": "1 line(s) = 1270.00; + tax 63.50 + other 0.00 = 1333.50",
+            "title": "Totals add up"
+          },
+          {
+            "findings": [],
+            "rule_id": "R3",
+            "status": "PASS",
+            "summary": "mapped to CA-GST-5",
+            "title": "Tax code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R4",
+            "status": "PASS",
+            "summary": "5100-00 -> 5100 Packaging Materials",
+            "title": "GL account code present and mapped"
+          },
+          {
+            "findings": [],
+            "rule_id": "R5",
+            "status": "PASS",
+            "summary": "invoice date 2026-10-19; posting date 2026-10-19 in an open period",
+            "title": "Bill date valid"
+          },
+          {
+            "findings": [],
+            "rule_id": "R6",
+            "status": "PASS",
+            "summary": "vendor 305 matches PO(s) 4111; active",
+            "title": "Vendor matches PO and is active"
+          },
+          {
+            "findings": [],
+            "rule_id": "R7",
+            "status": "PASS",
+            "summary": "1 line(s): billed <= received <= ordered; prices within 1%",
+            "title": "Three-way match (PO / receipt / bill)"
+          },
+          {
+            "findings": [],
+            "rule_id": "R8",
+            "status": "PASS",
+            "summary": "CAD",
+            "title": "Currency matches PO"
+          }
+        ],
+        "vendor": {
+          "id": 305,
+          "name": "Tidewater Packaging Ltd."
+        },
+        "verdict": "REVIEW"
+      }
+    ],
+    "certificate_format": "bill-preflight-certificate/1",
+    "idempotency_key_version": "v1",
+    "inputs": [
+      {
+        "file": "bills.json",
+        "role": "bills",
+        "sha256": "49edd6c5cb7b80695c9b04381c4aea95b64a7e24a7aa9a11da8d5429f3fc7329"
+      },
+      {
+        "file": "pos.json",
+        "role": "purchase_orders",
+        "sha256": "b5c973b4f4a98a3a1e5c34a1e54d3d8421f9247795781745b8ec9a49282ae2d0"
+      },
+      {
+        "file": "receipts.json",
+        "role": "receipts",
+        "sha256": "ece3651e60d9b72452f15caefbf8704528a40c903e365e18be3b673efc383645"
+      },
+      {
+        "file": "rules.json",
+        "role": "rules_config",
+        "sha256": "e2673714861eff0004147eec628079fac798689e16971c8189e5b570d583e17e"
+      },
+      {
+        "file": "vendors.json",
+        "role": "vendors",
+        "sha256": "c8c94fcc45a40857f6451ec070c32ee1c079790198d08d68d8b6081efc0cf733"
+      }
+    ],
+    "rules_config_name": "demo-netsuite-cad",
+    "rules_config_sha256": "e2673714861eff0004147eec628079fac798689e16971c8189e5b570d583e17e",
+    "rules_version": "1.0.0",
+    "summary": {
+      "bills": 12,
+      "rule_fail_counts": {
+        "R1": 1,
+        "R2": 1,
+        "R3": 1,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 1,
+        "R8": 0
+      },
+      "rule_warn_counts": {
+        "R1": 1,
+        "R2": 0,
+        "R3": 0,
+        "R4": 0,
+        "R5": 0,
+        "R6": 0,
+        "R7": 1,
+        "R8": 0
+      },
+      "verdicts": {
+        "BLOCK": 4,
+        "PASS": 6,
+        "REVIEW": 2
+      }
+    },
+    "tool": {
+      "name": "billcheck",
+      "version": "0.1.0"
+    }
+  },
+  "body_sha256": "767e60c8e8af95a0fbcd021437fcafe48efca8721788f1ddcdc53b89419deca2",
+  "hash_scope": "SHA-256 of canonical JSON of 'body' (sorted keys, separators ',' ':', UTF-8)",
+  "signed": false,
+  "generated_at": "2026-11-01T01:07:50+00:00"
+}
